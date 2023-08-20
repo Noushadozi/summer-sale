@@ -31,3 +31,8 @@ function enableButtons(totalPrice) {
   document.getElementById("make-purchase").removeAttribute("disabled");
 }
 
+function functionsCalling(productID, priceID) {
+  addToCart(productID);
+  const totalPrice = addPrice(priceID);
+  enableButtons(totalPrice);
+}
