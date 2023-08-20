@@ -48,5 +48,5 @@ document.getElementById("modal-button").addEventListener("click", function () {
   document.getElementById("coupon-input-field").value = "";
   document.getElementById("purchased-items").innerHTML = "";
   totalPrice = 0;
-  purchasedItemsNumbers = 0;
+  purchasedItemsNumbers = 1;
 });
