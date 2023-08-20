@@ -1,5 +1,6 @@
 let purchasedItemsNumbers = 1;
 let totalPrice = 0;
+let makePurchase = false;
 
 document.getElementById("card-1").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
@@ -23,6 +24,7 @@ document.getElementById("card-1").addEventListener("click", function () {
   }
 
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
 
 document.getElementById("card-2").addEventListener("click", function () {
@@ -45,6 +47,7 @@ document.getElementById("card-2").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
 
 document.getElementById("card-3").addEventListener("click", function () {
@@ -67,7 +70,9 @@ document.getElementById("card-3").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
+
 document.getElementById("card-4").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
   const productName = document.getElementById("product-name-4").innerText;
@@ -88,7 +93,9 @@ document.getElementById("card-4").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
+
 document.getElementById("card-5").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
   const productName = document.getElementById("product-name-5").innerText;
@@ -109,7 +116,9 @@ document.getElementById("card-5").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
+
 document.getElementById("card-6").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
   const productName = document.getElementById("product-name-6").innerText;
@@ -130,7 +139,9 @@ document.getElementById("card-6").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
+
 document.getElementById("card-7").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
   const productName = document.getElementById("product-name-7").innerText;
@@ -151,6 +162,7 @@ document.getElementById("card-7").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
 
 document.getElementById("card-8").addEventListener("click", function () {
@@ -173,6 +185,7 @@ document.getElementById("card-8").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
 
 document.getElementById("card-9").addEventListener("click", function () {
@@ -195,4 +208,5 @@ document.getElementById("card-9").addEventListener("click", function () {
       .removeAttribute("disabled");
   }
   purchasedItemsNumbers++;
+  document.getElementById("make-purchase").removeAttribute("disabled");
 });
