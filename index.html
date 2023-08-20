@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Summer Sale</title>
 </head>
+
 <body>
     <header class="bg-[#F9F6E2]">
         <div class="flex w-[80%] gap-[29px] items-center h-[873px] mx-auto">
@@ -37,7 +39,8 @@
                                 <div class="rating">
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                        checked="checked" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
@@ -195,26 +198,34 @@
                 <div class="bg-[white] p-[24px] w-[367px] rounded-xl">
                     <h1 class="text-[24px] text-[#111] mb-[16px]">Have coupon?</h1>
                     <div class="join">
-                        <input id="coupon-input-field" class="bg-[#FFF] input input-bordered join-item" placeholder="Coupon code" />
-                        <button id="coupon-input-field-button" disabled class="btn join-item rounded-r bg-[#E527B2] text-[white] border-0">Apply</button>
+                        <input id="coupon-input-field" class="bg-[#FFF] input input-bordered join-item"
+                            placeholder="Coupon code" />
+                        <button id="coupon-input-field-button" disabled
+                            class="btn join-item rounded-r bg-[#E527B2] text-[white] border-0">Apply</button>
                     </div>
                 </div>
                 <div class="bg-[white] rounded-xl">
                     <div class="flex flex-col w-full border-opacity-50">
-                        <div id="purchased-items" class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
+                        <div id="purchased-items"
+                            class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
                         </div>
                         <div class="divider"></div>
-                        <div class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
+                        <div
+                            class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
                             <div>
-                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total price:<span class="text-[#888888]"><span id="total-price">00.00</span> TK</span></h2>
-                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Discount :<span class="text-[#888888]">
-                                <span id="discount">00.00</span> TK</span></h2>
-                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total :<span class="text-[#888888]"><span id="total">00.00</span> TK</span></h2>
+                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total price:<span
+                                        class="text-[#888888]"><span id="total-price">00.00</span> TK</span></h2>
+                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Discount :<span
+                                        class="text-[#888888]">
+                                        <span id="discount">00.00</span> TK</span></h2>
+                                <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total :<span
+                                        class="text-[#888888]"><span id="total">00.00</span> TK</span></h2>
                             </div>
                         </div>
                         <div class="divider"></div>
                         <div class="bg-[white] grid h-10 card bg-base-300 rounded-box place-items-center">
-                            <button disabled class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make Purchase</button>
+                            <button disabled class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make
+                                Purchase</button>
                         </div>
                     </div>
                 </div>
@@ -224,4 +235,5 @@
     <script src="./scripts/index.js"></script>
     <script src="./scripts/card_operation.js"></script>
 </body>
+
 </html>
