@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="third-row-section pb-[56px]">
-                    <h1 class="text-[40px] font-semibold text-[#111] pb-[32px]">Kitchenware</h1>
+                    <h1 class="text-[40px] font-semibold text-[#111] pb-[32px]">Furniture</h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[24px]">
                         <div id="card-7" class="card w-96 bg-[#FFF] shadow-xl shrink-0">
                             <figure class="h-[200px] m-[20px] px-10 py-10 bg-[#f3f3f3]">
@@ -224,8 +224,22 @@
                         </div>
                         <div class="divider"></div>
                         <div class="bg-[white] grid h-10 card bg-base-300 rounded-box place-items-center">
-                            <button id="make-purchase" disabled class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make
+                            <button onclick="my_modal_1.showModal()" id="make-purchase" disabled
+                                class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make
                                 Purchase</button>
+
+                            <dialog id="my_modal_1" class="modal">
+                                <form method="dialog" class="modal-box bg-[white] flex flex-col items-center">
+                                    <img class="" src="./images/congo.png" alt="">
+                                    <h3 class="font-bold text-[#111] text-[48px]">Congratulations</h3>
+                                    <p class="py-4 text-[#888888]">Your Purchase the product</p>
+                                    <div class="modal-action">
+                                        <button id="modal-button" class="btn text-[white] border-none bg-[#E527B2]">Go
+                                            Home</button>
+                                    </div>
+                                </form>
+                            </dialog>
+
                         </div>
                     </div>
                 </div>

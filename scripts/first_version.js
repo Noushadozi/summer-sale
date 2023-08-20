@@ -1,6 +1,5 @@
 let purchasedItemsNumbers = 1;
 let totalPrice = 0;
-let makePurchase = false;
 
 document.getElementById("card-1").addEventListener("click", function () {
   const purchasedItems = document.getElementById("purchased-items");
@@ -202,7 +201,7 @@ document.getElementById("card-9").addEventListener("click", function () {
   const price = parseFloat(document.getElementById("price-9").innerText);
   totalPrice += price;
   document.getElementById("total-price").innerText = totalPrice;
-  if (totalPrice > 200) {
+  if (totalPrice >= 200) {
     document
       .getElementById("coupon-input-field-button")
       .removeAttribute("disabled");
@@ -225,3 +224,13 @@ document
       document.getElementById("total").innerText = total;
     }
   });
+
+document.getElementById("modal-button").addEventListener("click", function () {
+  document.getElementById("total").innerText = "00.00";
+  document.getElementById("discount").innerText = "00.00";
+  document.getElementById("total-price").innerText = "00.00";
+  document.getElementById("coupon-input-field").value = "";
+  document.getElementById("purchased-items").innerHTML = '';
+  totalPrice = 0;
+  purchasedItems = 0;
+});

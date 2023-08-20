@@ -23,7 +23,7 @@ function addPrice(productPrice) {
 }
 
 function enableButtons(totalPrice) {
-  if (totalPrice > 200) {
+  if (totalPrice >= 200) {
     document
       .getElementById("coupon-input-field-button")
       .removeAttribute("disabled");
