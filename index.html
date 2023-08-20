@@ -31,14 +31,14 @@
     </header>
 
     <main class="bg-[#F8F8F8]">
-        <div class="mx-auto 2xl:flex gap-[24px] justify-center">
+        <div class="mx-auto container 2xl:flex gap-[24px] justify-center">
             <div class="left">
                 <div class="first-row-section pb-[56px]">
                     <h1 class="text-[40px] font-semibold text-[#111] pt-[120px] pb-[32px]">
                         Kitchenware
                     </h1>
                     <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[24px]">
-                        <div class="card w-96 bg-[#FFF] shadow-xl shrink-0">
+                        <div id="card-1" class="card w-96 bg-[#FFF] shadow-xl shrink-0">
                             <figure class="m-[20px] px-10 py-10 bg-[#f3f3f3]">
                                 <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -52,10 +52,10 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <h1 class="text-[#111] font-semibold">K. Accessories</h1>
-                                <h1>39.00 TK</h1>
+                                <h1><span id="price-1">39.00 </span>TK</h1>
                             </div>
                         </div>
-                        <div class="card w-96 bg-[#FFF] shadow-xl shrink-0">
+                        <div id="card-2" class="card w-96 bg-[#FFF] shadow-xl shrink-0">
                             <figure class="m-[20px] px-10 py-10 bg-[#f3f3f3]">
                                 <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -68,10 +68,10 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <p class="text-[#111] font-semibold">K. Accessories</p>
-                                <h1>25.00 TK</h1>
+                                <h1><span id="price-2">25.00</span> TK</h1>
                             </div>
                         </div>
-                        <div class="card w-96 bg-[#FFF] shadow-xl shrink-0">
+                        <div id="card-3" class="card w-96 bg-[#FFF] shadow-xl shrink-0">
                             <figure class="m-[20px] px-10 py-10 bg-[#f3f3f3]">
                                 <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
                             </figure>
@@ -85,62 +85,57 @@
                                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                                 </div>
                                 <p class="text-[#111] font-semibold">Home Cooker</p>
-                                <h1>49.00 TK</h1>
+                                <h1><span id="price-3">49.00</span> TK</h1>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="right flex flex-col gap-[24px] 2xl:pt-[210px]">
+
                 <div class="bg-[white] p-[24px] w-[367px] rounded-xl">
                     <h1 class="text-[24px] text-[#111] mb-[16px]">Have coupon?</h1>
                     <div class="join">
-                        <input class="bg-[#FFF] input input-bordered join-item" placeholder="Coupon code" />
-                        <button class="btn join-item rounded-r bg-[#E527B2] text-[white] border-0">
-                            Subscribe
+                        <input id="coupon-input-field" class="bg-[#FFF] input input-bordered join-item" placeholder="Coupon code" />
+                        <button id="coupon-input-field-button" disabled class="btn join-item rounded-r bg-[#E527B2] text-[white] border-0">
+                            Apply
                         </button>
                     </div>
                 </div>
-                <!-- <div class="pt-[24px]">
-            <div id="items-parent"></div>
-            <hr class="w-[294px] mx-auto py-[10px]">
-            <div>
-              <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total price:<span class="text-[#888888]"> 257.00TK</span></h2>
-              <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Discount :<span class="text-[#888888]"> 51.40TK</span></h2>
-              <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">Total :<span class="text-[#888888]">205.60 TK</span></h2>
-            </div>
-            <hr class="w-[294px] mx-auto py-[10px]">
-          </div> -->
 
                 <div class="bg-[white] rounded-xl">
                     <div class="flex flex-col w-full border-opacity-50">
-                        <div class="bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
+                        <div id="purchased-items" class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
+
 
                         </div>
                         <div class="divider"></div>
-                        <div class="bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
+                        <div class="justify-items-start bg-[white] grid h-[auto] card bg-base-300 rounded-box place-items-center">
                             <div>
                                 <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">
-                                    Total price:<span class="text-[#888888]"> 257.00TK</span>
+                                    Total price:<span class="text-[#888888]"> <span id="total-price">00.00</span> TK</span>
                                 </h2>
                                 <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">
-                                    Discount :<span class="text-[#888888]"> 51.40TK</span>
+                                    Discount :<span class="text-[#888888]"> <span id="discount">00.00</span>  TK</span>
                                 </h2>
                                 <h2 class="text-[24px] text-[#111] font-semibold pb-3 pl-6">
-                                    Total :<span class="text-[#888888]">205.60 TK</span>
+                                    Total :<span class="text-[#888888]"> 00.00 TK</span>
                                 </h2>
                             </div>
                         </div>
                         <div class="divider"></div>
                         <div class="bg-[white] grid h-10 card bg-base-300 rounded-box place-items-center">
-                            <button class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make
+                            <button disabled class="btn bg-[#E527B2] border-0 text-[white] w-[80%] mb-[-35px]">Make
                                 Purchase</button>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </main>
+    <script src="./scripts/index.js"></script>
+    <script src="./scripts/card_operation.js"></script>
 </body>
 
 </html>
