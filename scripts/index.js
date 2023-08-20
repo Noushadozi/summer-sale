@@ -1,24 +1,14 @@
 document
-  .getElementById("coupon-input-field")
-  .addEventListener("keyup", function (e) {
-    if (e.target.value === "SELL200") {
-      document
-        .getElementById("coupon-input-field-button")
-        .removeAttribute("disabled");
-      console.log(e.target.value);
-    }
-  });
-document
   .getElementById("coupon-input-field-button")
   .addEventListener("click", function () {
-    const totalPriceString = document.getElementById("total-price").innerText;
-    const totalPrice = parseFloat(totalPriceString);
-    if (totalPrice < 200) {
-      alert("Minimum purchased required TK 200 or above to get discount");
-      return;
+    const InputField = document.getElementById("coupon-input-field").value;
+    if (InputField === "SELL200") {
+      const totalPriceString = document.getElementById("total-price").innerText;
+      const totalPrice = parseFloat(totalPriceString);
+
+      const discount = totalPrice * 0.2;
+      document.getElementById("discount").innerText = discount;
+      const total = totalPrice - discount;
+      document.getElementById("total").innerText = total;
     }
-    const discount = totalPrice * 0.2;
-    document.getElementById("discount").innerText = discount;
-    const total = totalPrice - discount;
-    document.getElementById("total").innerText = total;
   });
