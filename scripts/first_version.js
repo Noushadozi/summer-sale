@@ -1,3 +1,6 @@
+//  !This code is not connected to index.html
+//  !This is repetitive method, done to understand better
+
 // let purchasedItemsNumbers = 1;
 // let totalPrice = 0;
 
@@ -233,4 +236,10 @@
 //   document.getElementById("purchased-items").innerHTML = '';
 //   totalPrice = 0;
 //   purchasedItems = 1;
+// document
+// .getElementById("coupon-input-field-button")
+// .setAttribute("disabled","disabled");
+// document
+// .getElementById("make-purchase")
+// .setAttribute("disabled","disabled");
 // });

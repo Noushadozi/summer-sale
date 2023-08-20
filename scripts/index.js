@@ -49,4 +49,10 @@ document.getElementById("modal-button").addEventListener("click", function () {
   document.getElementById("purchased-items").innerHTML = "";
   totalPrice = 0;
   purchasedItemsNumbers = 1;
+  document
+      .getElementById("coupon-input-field-button")
+      .setAttribute("disabled","disabled");
+  document
+      .getElementById("make-purchase")
+      .setAttribute("disabled","disabled");
 });
