@@ -218,28 +218,73 @@
 //   .addEventListener("click", function () {
 //     const InputField = document.getElementById("coupon-input-field").value;
 //     if (InputField === "SELL200") {
-//       const totalPriceString = document.getElementById("total-price").innerText;
-//       const totalPrice = parseFloat(totalPriceString);
-
-//       const discount = parseFloat(totalPrice * 0.2).toFixed(2);
-//       document.getElementById("discount").innerText = discount;
-//       const total = parseFloat(totalPrice - discount).toFixed(2);
-//       document.getElementById("total").innerText = total;
-//     }
-//   });
-
-// document.getElementById("modal-button").addEventListener("click", function () {
-//   document.getElementById("total").innerText = "00.00";
-//   document.getElementById("discount").innerText = "00.00";
-//   document.getElementById("total-price").innerText = "00.00";
-//   document.getElementById("coupon-input-field").value = "";
-//   document.getElementById("purchased-items").innerHTML = '';
-//   totalPrice = 0;
-//   purchasedItems = 1;
-// document
-// .getElementById("coupon-input-field-button")
-// .setAttribute("disabled","disabled");
-// document
-// .getElementById("make-purchase")
-// .setAttribute("disabled","disabled");
-// });
+    //       const totalPriceString = document.getElementById("total-price").innerText;
+    //       const totalPrice = parseFloat(totalPriceString);
+    
+    //       const discount = parseFloat(totalPrice * 0.2).toFixed(2);
+    //       document.getElementById("discount").innerText = discount;
+    //       const total = parseFloat(totalPrice - discount).toFixed(2);
+    //       document.getElementById("total").innerText = total;
+    //     }
+    //   });
+    
+    // document.getElementById("modal-button").addEventListener("click", function () {
+        //   document.getElementById("total").innerText = "00.00";
+        //   document.getElementById("discount").innerText = "00.00";
+        //   document.getElementById("total-price").innerText = "00.00";
+        //   document.getElementById("coupon-input-field").value = "";
+        //   document.getElementById("purchased-items").innerHTML = '';
+        //   totalPrice = 0;
+        //   purchasedItems = 1;
+        // document
+        // .getElementById("coupon-input-field-button")
+        // .setAttribute("disabled","disabled");
+        // document
+        // .getElementById("make-purchase")
+        // .setAttribute("disabled","disabled");
+        // });
+        
+      //  // document.getElementById("card-9").addEventListener("click", function () {
+      //  //   const purchasedItems = document.getElementById("purchased-items");
+      //  //   const productName = document.getElementById("product-name-9").innerText;
+      //  //   const p = document.createElement("p");
+      //  //   p.classList.add("text-[#111]");
+      //  //   p.classList.add("text-[24px]");
+      //  //   p.classList.add("pl-[24px]");
+      //  //   p.classList.add("pt-[20px]");
+      //  //   p.classList.add("font-semibold");
+      //  //   p.innerText = `${purchasedItemsNumbers}. ${productName}`;
+      //  //   purchasedItems.appendChild(p);
+      //  //   const price = parseFloat(document.getElementById("price-9").innerText);
+      //  //   totalPrice += price;
+      //  //   document.getElementById("total-price").innerText = totalPrice;
+      //  //   if (totalPrice >= 200) {
+      //  //     document
+      //  //       .getElementById("coupon-input-field-button")
+      //  //       .removeAttribute("disabled");
+      //  //   }
+      //  //   purchasedItemsNumbers++;
+      //  //   document.getElementById("make-purchase").removeAttribute("disabled");
+      //  // });
+      //  // document.getElementById("card-9").addEventListener("click", function () {
+      //  //   const purchasedItems = document.getElementById("purchased-items");
+      //  //   const productName = document.getElementById("product-name-9").innerText;
+      //  //   const p = document.createElement("p");
+      //  //   p.classList.add("text-[#111]");
+      //  //   p.classList.add("text-[24px]");
+      //  //   p.classList.add("pl-[24px]");
+      //  //   p.classList.add("pt-[20px]");
+      //  //   p.classList.add("font-semibold");
+      //  //   p.innerText = `${purchasedItemsNumbers}. ${productName}`;
+      //  //   purchasedItems.appendChild(p);
+      //  //   const price = parseFloat(document.getElementById("price-9").innerText);
+      //  //   totalPrice += price;
+      //  //   document.getElementById("total-price").innerText = totalPrice;
+      //  //   if (totalPrice >= 200) {
+      //  //     document
+      //  //       .getElementById("coupon-input-field-button")
+      //  //       .removeAttribute("disabled");
+      //  //   }
+      //  //   purchasedItemsNumbers++;
+      //  //   document.getElementById("make-purchase").removeAttribute("disabled");
+      //  // });
